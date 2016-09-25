@@ -66,12 +66,18 @@ if let godfatherMovies = movies["The Godfather"] {
 
 // MODIFYING VALUES
 
+//movies["The Fast and the Furious"].append("Faster! 9")
+//movies["The Fast and the Furious"].append("THE FASTEST 10")
+
 if var films = movies["The Fast and the Furious"] {
     films.append("Faster! 9")
     films.append("THE FASTEST 10")
     
     movies["The Fast and the Furious"] = films
+    print (films)
 }
+
+
 
 if let fastMovies = movies["The Fast and the Furious"] {
     for (index, film) in fastMovies.enumerated() {
